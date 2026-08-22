@@ -137,12 +137,12 @@ section {
     cursor: pointer;
 }
 
-/* by default show the "Dark mode" label and hide the "Light mode" one */
+
 .toggle-light {
     display: none;
 }
 
-/* when the checkbox is checked, swap the two labels */
+
 #theme-toggle:checked~.page .toggle-dark {
     display: none;
 }
@@ -151,7 +151,7 @@ section {
     display: inline;
 }
 
-/* dark color scheme applied through the sibling of the checked checkbox */
+
 #theme-toggle:checked~.page {
     background: linear-gradient(160deg, #0f172a, #1e293b);
     color: #e5e7eb;
@@ -187,4 +187,42 @@ section {
 
 #theme-toggle:checked~.page .project h3 {
     color: #f9fafb;
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 20px 10px;
+    }
+
+    .card {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .toolbar {
+        text-align: center;
+    }
+
+    .avatar {
+        width: 110px;
+        height: 110px;
+    }
+
+    .profile h1 {
+        font-size: 24px;
+    }
+
+    .role {
+        font-size: 14px;
+    }
+
+    .contact-list li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .contact-list a {
+        display: block;
+        text-align: center;
+    }
 }
